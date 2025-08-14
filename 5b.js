@@ -2199,10 +2199,21 @@ function createImage(base64) {
 
 // Gets the viewbox of an svg from its base64 encoding.
 function getVB(base64) {
+	if (!base64 || !base64.includes(',')) {
+		console.warn('Invalid base64 input:', base64);
+		return null;
+	}
+
 	let svgString = atob(base64.split(',')[1]);
 	let doc = new DOMParser();
 	let xml = doc.parseFromString(svgString, 'image/svg+xml');
 	let svg = xml.getElementsByTagName('svg')[0];
+
+	if (!svg || !svg.hasAttribute('viewBox')) {
+		console.warn('No <svg> tag or missing viewBox');
+		return null;
+	}
+
 	return svg.getAttribute('viewBox').split(' ').map(Number);
 }
 
