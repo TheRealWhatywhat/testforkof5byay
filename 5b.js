@@ -9173,7 +9173,7 @@ function draw() {
 					// }
 
 					drawSimpleButton(loggedInExploreUser5beamID ? 'Share to Explore' : 'Share to Explore as Guest', shareToExplore, 675, tabWindowY + 210, 270, 30, 3, '#ffffff', '#404040', '#666666', '#555555');
-					drawMenu0Button('EXIT', 846, cheight - 50, false, menuExitLevelCreator, 100);
+					drawMenu0Button('EXIT', 846, cheight - 80, false, menuExitLevelCreator, 100);
 					// drawMenu2_3Button(0, 837.5, 486.95, menuExitLevelCreator);
 					break;
 			}
