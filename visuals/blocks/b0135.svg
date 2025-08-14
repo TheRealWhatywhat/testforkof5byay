@@ -1,10 +1,27 @@
-<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1">
 
- <g>
-  <title>Layer 1</title>
-  <path id="svg_1" d="m0,0l0,30l30,0l0,-30l-30,0z" fill="#4d1515"/>
-  <path id="svg_2" d="m5,30l-5,-5l0,5l5,0m-5,-15l0,5l10,10l5,0l-15,-15m0,-10l0,5l20,20l5,0l-25,-25m5,-5l-5,0l30,30l0,-5l-25,-25m25,20l0,-5l-15,-15l-5,0l20,20m0,-10l0,-5l-5,-5l-5,0l10,10z" fill="#721f1f"/>
-  <path id="svg_3" d="m30,3l-30,0l0,6.95l30,0l0,-6.95m0,-3.05l-30,0l0,0.05l30,0l0,-0.05z" fill-opacity="0.49804" fill="#FFFFFF"/>
-  <path id="svg_4" d="m30,0l-30,0l0,3l30,0l0,-3z" fill="#FFFFFF"/>
- </g>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+<path fill="#721F1F" stroke="none" d="
+M 0 0
+L 0 30 30 30 30 0 Z"/>
+<path fill="#4D1515" stroke="none" d="
+M 5 30
+L 0 25 0 30 5 30
+M 0 15
+L 0 20 10 30 15 30 0 15
+M 0 5
+L 0 10 20 30 25 30 0 5
+M 5 0
+L 0 0 30 30 30 25 5 0
+M 30 20
+L 30 15 15 0 10 0 30 20
+M 30 10
+L 30 5 25 0 20 0 30 10 Z"/>
+<path fill="#FFFFFF" fill-opacity="0.4980392156862745" stroke="none" d="
+M 30 3
+L 0 3 0 9.95 30 9.95 30 3
+M 30 -0.05
+L 0 -0.05 0 0 30 0 30 -0.05 Z"/>
+<path fill="#FFFFFF" stroke="none" d="
+M 30 0
+L 0 0 0 3 30 3 30 0 Z"/>
 </svg>
