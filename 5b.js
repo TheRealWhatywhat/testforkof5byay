@@ -8868,7 +8868,7 @@ function draw() {
 							} else {
 								let img = blockProperties[i][16] > 1 ? svgTiles[i][blockProperties[i][17] ? _frameCount % blockProperties[i][16] : 0] : svgTiles[i];
 								let vb = blockProperties[i][16] > 1 ? svgTilesVB[i][blockProperties[i][17] ? _frameCount % blockProperties[i][16] : 0] : svgTilesVB[i];
-								if (vb && vb[2] <= 60) {
+								if (Array.isArray(vb) && vb.length >= 3 && vb[2] <= 60) {
 									let sc = bs / 30;
 									let tlx = 660 + (bdist - bs) + (j % bpr) * bdist;
 									let tly =
