@@ -3019,7 +3019,7 @@ function drawLevelMap() {
 		// 	else color = 3;
 		// }
 		let text = '';
-		if (!playingLevelpack && i >= 32) text = 'B' + (i - 30).toString().padStart(2, '0');
+		if (!playingLevelpack && i >= 31) text = 'B' + (i - 30).toString().padStart(2, '0');
         else if (!playingLevelpack && i == 30) text = 'TBA';
 		else text = (i + 1).toString().padStart(3, '0');
 		drawLevelButton(text, (j % 8) * 110 + 45, Math.floor(j / 8) * 50 + 160, i, color);
