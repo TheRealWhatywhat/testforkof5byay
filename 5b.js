@@ -3007,9 +3007,9 @@ function drawLevelMap() {
 		ctx.fillText(mdao[levelProgress - 1], 767.3, 85.4);
 		ctx.fillText((deathCount - mdao[levelProgress - 1]).toLocaleString(), 767.3, 116.8);
 	}
-	for (let i = 0; i < (playingLevelpack?levelCount:133); i++) {
+	for (let i = 0; i < (playingLevelpack?levelCount:41); i++) {
 		let j = i;
-		if (!playingLevelpack && j >= 100) j += 19;
+		if (!playingLevelpack && j >= 31) j += 19;
 		let color = 1;
 		if (i >= levelCount) color = 1;
 		else if (gotCoin[i]) color = 4;
