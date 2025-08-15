@@ -644,8 +644,10 @@ const blockProperties = [
 	[false,true,false,false,false,false,false,false,false,false,false,0,0,false,false,true,1,false],
 	[true,true,true,true,false,false,false,false,false,false,false,0,0,true,false,true,1,false],
 	[false,false,false,false,false,false,false,false,false,false,true,0,0,false,false,true,1,false],
+	[true,true,true,true,false,false,false,false,true,false,false,0,1,false,false,true,14,false,[0,1,2,3,4,5,6,7,8,9,10,11,12,13]],
+	[true,true,true,true,false,false,false,false,true,false,false,0,1,false,false,true,1,false],
 ];
-const switches = [[31,33,32,34,79,78,81,82],[51,53,52,54,133,134],[65,61,60,62,63,64],[],[],[14,16,83,85]];
+const switches = [[31,33,32,34,79,78,81,82,138,139],[51,53,52,54,133,134],[65,61,60,62,63,64],[],[],[14,16,83,85]];
 
 // [0] - hitbox width
 // [1] - hitbox height
@@ -8027,6 +8029,13 @@ function draw() {
 							startDeath(i);
 						} else if (char[i].y > char[i].py && verticalProp(i, 1, 1, char[i].px, char[i].y)) {
 							stopY = 1;
+						}
+						if(verticalType(i,1,138,true)){
+						   toBounce = true;
+						} else if(verticalProp(i,1,5,char[i].px,char[i].y) && char[i].charState >= 7){
+						   startDeath(i);
+						} else if(char[i].y > char[i].py && verticalProp(i,1,1,char[i].px,char[i].y)){
+						   stopY = 1;
 						}
 					}
 					if (newTileUp(i)) {
