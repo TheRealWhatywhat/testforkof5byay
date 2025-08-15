@@ -2926,7 +2926,6 @@ function drawLevelMapBorder() {
 	// For security reasons, you can not draw images from svg files to a canvas.
 	// So I have to draw the border image manually with masking and stuff.
 	// https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping
-
 	// It might be better to use a path object here instead of hard-coding it.
 	ctx.save();
 	ctx.beginPath();
@@ -3020,7 +3019,8 @@ function drawLevelMap() {
 		// 	else color = 3;
 		// }
 		let text = '';
-		if (!playingLevelpack && i >= 100) text = 'B' + (i - 99).toString().padStart(2, '0');
+		if (!playingLevelpack && i == 31) text = 'TBA';
+		if (!playingLevelpack && i >= 41) text = 'B' + (i - 99).toString().padStart(2, '0');
 		else text = (i + 1).toString().padStart(3, '0');
 		drawLevelButton(text, (j % 8) * 110 + 45, Math.floor(j / 8) * 50 + 160, i, color);
 	}
