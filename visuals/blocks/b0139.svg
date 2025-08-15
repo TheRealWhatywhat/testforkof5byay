@@ -1,0 +1,8 @@
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none">
+ <g>
+  <title>Layer 1</title>
+  <path stroke-dasharray="5,5" stroke="#ffff00" fill="none" d="m30,5.31872l0,-5l-12.5,0l0,0l-5,0l0,0l-12.5,0l0,5l30,0z" id="svg_1"/>
+  <path stroke="#ffcc00" stroke-dasharray="5,5" fill="none" d="m0,5l0,25l30,0l0,-25l-30,0z" id="svg_2"/>
+ </g>
+
+</svg>
