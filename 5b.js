@@ -2749,26 +2749,29 @@ function exitExploreLevel() {
 	cameraY = 0;
 }
 
-function drawMenu0Button(text, x, y, grayed, action, width = menu0ButtonSize.w) {
+function drawMenu0Button(text, x, y, grayed, action, width = menu0ButtonSize.w, height = menu0ButtonSize.h, fontSize = null)
+  {
 	let fill = '#ffffff';
 	if (!grayed) {
-		if (!lcPopUp && onRect(_xmouse, _ymouse, x, y, width, menu0ButtonSize.h)) {
+		if (!lcPopUp && onRect(_xmouse, _ymouse, x, y, width, height)) {
 			onButton = true;
 			if (!mouseIsDown) fill = '#d4d4d4';
-			if (onRect(lastClickX, lastClickY, x, y, width, menu0ButtonSize.h)) {
+			if (onRect(lastClickX, lastClickY, x, y, width, height)) {
 				if (mouseIsDown) fill = '#b8b8b8';
 				else if (mousePressedLastFrame) action();
 			}
 		}
 	} else fill = '#b8b8b8';
 
-	drawRoundedRect(fill, x, y, width, menu0ButtonSize.h, menu0ButtonSize.cr);
+	drawRoundedRect(fill, x, y, width, height, menu0ButtonSize.cr);
 
-	ctx.font = 'bold 30px Helvetica';
+	// Use default font size unless a custom one is passed
+	const actualFontSize = fontSize || 30;
+	ctx.font = `bold ${actualFontSize}px Helvetica`;
 	ctx.fillStyle = '#666666';
 	ctx.textAlign = 'center';
 	ctx.textBaseline = 'middle';
-	ctx.fillText(text, x + width / 2, y + (menu0ButtonSize.h * 1.1) / 2);
+	ctx.fillText(text, x + width / 2, y + height / 2);
 }
 
 function drawMenu2_3Button(id, x, y, action) {
