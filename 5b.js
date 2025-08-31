@@ -2764,7 +2764,7 @@ function drawMenu0Button(text, x, y, grayed, action, width = menu0ButtonSize.w, 
 
 	drawRoundedRect(fill, x, y, width, height, menu0ButtonSize.cr);
 
-	ctx.font = 'bold ${(fontSize * 1.5)}px Helvetica';
+	ctx.font = 'bold ${fontSize * 1.5}$px Helvetica';
 	ctx.fillStyle = '#666666';
 	ctx.textAlign = 'center';
 	ctx.textBaseline = 'middle';
