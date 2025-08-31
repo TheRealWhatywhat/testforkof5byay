@@ -3308,12 +3308,12 @@ function resetLevel() {
 		cLevelDialogueFace = dialogueFace[currentLevel];
 		cLevelDialogueText = dialogueText[currentLevel];
 
-		if (currentLevel > 31) {
+		if (currentLevel > 30) {
 			currentLevelDisplayName =
-				'B' + (currentLevel - 31).toString().padStart(2, '0') + '. ' + levelName[currentLevel];
+				'B' + (currentLevel - 30).toString().padStart(2, '0') + '. ' + levelName[currentLevel];
 		} else if (currentLevel = 31) {
 			currentLevelDisplayName =
-				'TBA.' + levelName[currentLevel];
+				'TBA. ' + levelName[currentLevel];
 		} else {
 			currentLevelDisplayName = (currentLevel + 1).toString().padStart(3, '0') + '. ' + levelName[currentLevel];
 		}
