@@ -3311,7 +3311,7 @@ function resetLevel() {
 		if (currentLevel > 30) {
 			currentLevelDisplayName =
 				'B' + (currentLevel - 30).toString().padStart(2, '0') + '. ' + levelName[currentLevel];
-		} else if (currentLevel == 31) {
+		} else if (currentLevel == 30) {
 			currentLevelDisplayName =
 				'TBA. ' + levelName[currentLevel];
 		} else {
