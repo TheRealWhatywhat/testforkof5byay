@@ -2915,7 +2915,9 @@ function drawMenu() {
 		drawMenu0Button('NEW GAME', 665.55, 348.4, false, menuNewGame);
 	}
 	drawMenu0Button('CONTINUE GAME', 665.55, 393.05, levelProgress == 0, menuContGame);
-	drawMenu0Button('LEVEL CREATOR', 665.55, 437.7, false, menuLevelCreator);
+	drawMenu0Button('LEVEL CREATOR', 665.55, 15.2, false, menuLevelCreator);
+	drawMenu0Button('CREDITS', 361.2, 15.2, false, menuCredits);
+	drawMenu0Button('SWITCH TEAMS', 146.6, 15.2, true, menuTeamSwitch);
 	// drawMenu0Button('EXPLORE', 665.55, 482.5, false, menuExplore);
 
 	// let started = true;
