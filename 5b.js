@@ -2916,7 +2916,7 @@ function drawMenu() {
 	}
 	drawMenu0Button('CONTINUE GAME', 665.55, 393.05, levelProgress == 0, menuContGame);
 	drawMenu0Button('LEVEL CREATOR', 665.55, 437.7, false, menuLevelCreator);
-	drawMenu0Button('EXPLORE', 665.55, 482.5, false, menuExplore);
+	// drawMenu0Button('EXPLORE', 665.55, 482.5, false, menuExplore);
 
 	// let started = true;
 	// if (bfdia5b.data.levelProgress == undefined || bfdia5b.data.levelProgress == 0) {
